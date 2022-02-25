@@ -76,6 +76,13 @@
     @apply text-xl text-white;
   }
 
+  .h1.coloured,
+  .h2.coloured,
+  .h3.coloured,
+  .h4.coloured {
+    @apply text-yellow-300;
+  }
+
   .subtitle {
     @apply text-3xl text-gray-400 mt-4 leading-snug;
   }
