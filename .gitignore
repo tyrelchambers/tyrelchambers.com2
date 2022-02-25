@@ -4,4 +4,3 @@ node_modules
 /public/build
 /app/tailwind.css
 .env
-.npmrc
