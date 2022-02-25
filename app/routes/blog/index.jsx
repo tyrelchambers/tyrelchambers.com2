@@ -19,6 +19,7 @@ const index = () => {
   const tags = [...new Set(posts.map((post) => post.tags.split(",")).flat())];
   let [searchParams, setSearchParams] = useSearchParams();
   let queryTag = searchParams.get("tag");
+  let query = searchParams.get("q");
   const featuredPost = posts[posts.length - 1];
 
   return (
@@ -37,7 +38,9 @@ const index = () => {
             <input
               type="search"
               placeholder="Search for articles"
-              className="mt-16 rounded-full p-6 border-2 border-gray-500 bg-zinc-800 bg-opacity-20"
+              className="mt-16 rounded-full p-6 border-2 border-gray-500 bg-zinc-800 bg-opacity-20 text-white"
+              onInput={(e) => setSearchParams({ q: e.target.value })}
+              value={query}
             />
           </div>
           <div className="w-1/2">
@@ -94,7 +97,7 @@ const index = () => {
         <section>
           <h3 className="h3">Showing {queryTag ? queryTag : "all"} articles</h3>
           <div className="grid grid-cols-3 gap-10 mt-10">
-            <BlogPosts posts={posts} queryTag={queryTag} />
+            <BlogPosts posts={posts} query={query} queryTag={queryTag} />
           </div>
         </section>
       </main>
