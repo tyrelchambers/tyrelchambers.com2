@@ -5,8 +5,6 @@ import Header from "~/layouts/Header";
 import { getPost, getPosts } from "~/post";
 import { getMDXComponent } from "mdx-bundler/client";
 import { format } from "date-fns";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/pro-solid-svg-icons";
 import Gap from "~/components/Gap";
 import PostItem from "~/components/PostItem";
 import { getArticleSuggestions } from "~/utils/getArticleSuggestions";
@@ -37,7 +35,7 @@ const PostSlug = () => {
       <Header />
       <div className="max-w-screen-md ml-auto mr-auto mt-20">
         <Link to="/blog" className="text-white">
-          <FontAwesomeIcon icon={faArrowLeftLong} className="mr-8" />
+          <i className="fa-solid fa-arrow-left-long mr-8"></i>
           Back to blogs
         </Link>
         <Gap height="h-20" />

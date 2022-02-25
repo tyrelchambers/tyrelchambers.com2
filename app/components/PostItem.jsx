@@ -1,5 +1,3 @@
-import { faArrowRightLong } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "remix";
 import { truncateString } from "~/utils/truncateString";
@@ -17,7 +15,7 @@ const PostItem = ({ post }) => {
           to={`/blog/${post.slug}`}
           className="link-button small secondary mt-8 post-item-cta opacity-0"
         >
-          Read post <FontAwesomeIcon icon={faArrowRightLong} />
+          Read post <i className="fa-solid fa-arrow-right-long"></i>
         </Link>
       </div>
       <div className="gradient"></div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { socials } from "~/constants/socials";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Link } from "remix";
 
 const SocialList = ({ className = "" }) => {
@@ -9,10 +9,10 @@ const SocialList = ({ className = "" }) => {
       {socials.map((social) => (
         <li className="text-xl" key={social.label}>
           <a href={social.url} target="_blank" rel="noopenner noreferrer">
-            <FontAwesomeIcon
-              icon={social.icon}
-              className="opacity-50 hover:opacity-100 transition-all text-white"
-            />
+            {social.icon({
+              className:
+                "opacity-50 hover:opacity-100 transition-all text-white",
+            })}
           </a>
         </li>
       ))}

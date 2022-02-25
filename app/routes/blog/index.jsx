@@ -7,8 +7,6 @@ import { useSearchParams } from "remix";
 import Footer from "~/layouts/Footer";
 import BlogPosts from "~/components/BlogPosts";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/pro-solid-svg-icons";
 
 export const loader = async () => {
   return getPosts();
@@ -61,7 +59,7 @@ const index = () => {
                   className="link-button small secondary mt-6"
                 >
                   Read post
-                  <FontAwesomeIcon icon={faArrowRightLong} />
+                  <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
               </div>
             </div>

@@ -1,5 +1,3 @@
-import { faArrowRightLong } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Project = ({ project }) => {
@@ -17,7 +15,7 @@ const Project = ({ project }) => {
         rel="noopenerr noreferrer"
       >
         See more
-        <FontAwesomeIcon icon={faArrowRightLong} />
+        <i className="fa-solid fa-arrow-right-long"></i>
       </a>
     </div>
   );

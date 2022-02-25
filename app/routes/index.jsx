@@ -4,8 +4,6 @@ import Header from "~/layouts/Header";
 import me2 from "../../public/images/me2.jpeg";
 import me1 from "../../public/images/me.jpeg";
 import SocialList from "~/components/SocialList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/pro-solid-svg-icons";
 import Gap from "~/components/Gap";
 import { projects } from "~/constants/projects";
 import Project from "~/components/Project";
@@ -39,7 +37,7 @@ export default function Index() {
             <div className="flex items-center mt-10 w-full gap-6">
               <Link to="/blog" className="link-button primary large">
                 Read my blog
-                <FontAwesomeIcon icon={faArrowRightLong} />
+                <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
               <Link to="/resources" className="link-button secondary large">
                 View some resources
@@ -76,7 +74,7 @@ export default function Index() {
               <SocialList />
               <Link to="/about" className="link-button outline">
                 Learn more about me
-                <FontAwesomeIcon icon={faArrowRightLong} />
+                <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
             </div>
           </div>
@@ -103,7 +101,7 @@ export default function Index() {
             </div>
             <Link to="/blog" className="link-button small secondary">
               See all posts
-              <FontAwesomeIcon icon={faArrowRightLong} />
+              <i className="fa-solid fa-arrow-right-long"></i>
             </Link>
           </div>
 
@@ -175,7 +173,7 @@ export default function Index() {
             </div>
             <Link to="/resources" className="link-button small outline h-fit">
               See resources
-              <FontAwesomeIcon icon={faArrowRightLong} />
+              <i className="fa-solid fa-arrow-right-long"></i>
             </Link>
           </div>
         </section>

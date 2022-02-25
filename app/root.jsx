@@ -38,6 +38,10 @@ export default function App() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
+        <script
+          src="https://kit.fontawesome.com/5f8ee45a20.js"
+          crossorigin="anonymous"
+        ></script>
       </head>
       <body className="body">
         <Outlet />

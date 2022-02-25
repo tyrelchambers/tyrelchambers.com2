@@ -12,8 +12,6 @@ import { Link, useLoaderData } from "remix";
 import { getPosts } from "~/post";
 import { getArticleSuggestions } from "~/utils/getArticleSuggestions";
 import PostItem from "~/components/PostItem";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/pro-solid-svg-icons";
 
 export const loader = async () => {
   const posts = await getPosts();
@@ -126,7 +124,7 @@ const about = () => {
               </div>
               <Link to="/blog" className="link-button small secondary">
                 Read more
-                <FontAwesomeIcon icon={faArrowRightLong} />
+                <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
             </div>
 

@@ -10,6 +10,7 @@ FROM base as deps
 RUN mkdir /app
 WORKDIR /app
 
+ADD .npmrc ./
 ADD package.json package-lock.json ./
 RUN npm install --production=false
 
