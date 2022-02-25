@@ -164,6 +164,21 @@ export default function Index() {
           </div>
         </section>
         <Gap />
+        <section>
+          <h2 className="h2">Some media I listen to</h2>
+          <div className="mt-10">
+            <iframe
+              style={{ "border-radius": "12px" }}
+              src="https://open.spotify.com/embed/show/4kYCRYJ3yK5DQbP5tbfZby?utm_source=generator&theme=0"
+              width="100%"
+              height="232"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
+          </div>
+        </section>
+        <Gap />
       </main>
       <Footer />
     </div>

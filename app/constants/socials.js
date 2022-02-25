@@ -1,4 +1,9 @@
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faGithub,
+  faDev,
+  faHashnode,
+} from "@fortawesome/free-brands-svg-icons";
 export const socials = [
   {
     label: "Twitter",
@@ -9,5 +14,15 @@ export const socials = [
     label: "Github",
     url: "https://github.com/tyrelchambers",
     icon: faGithub,
+  },
+  {
+    label: "Dev.to",
+    url: "https://dev.to/imtyrelchambers",
+    icon: faDev,
+  },
+  {
+    label: "Hashnode",
+    url: "https://hashnode.com/@tyrelchambers",
+    icon: faHashnode,
   },
 ];

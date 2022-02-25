@@ -50,6 +50,7 @@ const about = () => {
         </section>
 
         <Gap />
+
         <figure>
           <img
             src={img2}
