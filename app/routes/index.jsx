@@ -89,8 +89,8 @@ export default function Index() {
             challenges.
           </p>
           <div className="grid grid-cols-3 gap-20 mt-16">
-            {projects.map((project) => (
-              <Project project={project} />
+            {projects.map((project, index) => (
+              <Project project={project} key={index} />
             ))}
           </div>
         </section>
@@ -108,8 +108,8 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-3 gap-10 mt-10">
-            {posts.map((post) => (
-              <PostItem post={post} />
+            {posts.map((post, index) => (
+              <PostItem post={post} key={index} />
             ))}
           </div>
         </section>
@@ -165,15 +165,31 @@ export default function Index() {
         </section>
         <Gap />
         <section>
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col max-w-3xl">
+              <h2 className="h2">Resources I've collected</h2>
+              <p className="subtitle">
+                If you're looking for some handy links to helpful resources,
+                check them out
+              </p>
+            </div>
+            <Link to="/resources" className="link-button small outline h-fit">
+              See resources
+              <FontAwesomeIcon icon={faArrowRightLong} />
+            </Link>
+          </div>
+        </section>
+        <Gap />
+        <section>
           <h2 className="h2">Some media I listen to</h2>
           <div className="mt-10">
             <iframe
-              style={{ "border-radius": "12px" }}
+              className="rounded-lg"
               src="https://open.spotify.com/embed/show/4kYCRYJ3yK5DQbP5tbfZby?utm_source=generator&theme=0"
               width="100%"
               height="232"
               frameBorder="0"
-              allowfullscreen=""
+              allowFullScreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
           </div>

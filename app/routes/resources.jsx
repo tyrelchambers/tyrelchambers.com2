@@ -68,6 +68,7 @@ const resources = () => {
               {photography.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -86,6 +87,7 @@ const resources = () => {
               {tutorials.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -104,6 +106,7 @@ const resources = () => {
               {codeResources.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -122,6 +125,7 @@ const resources = () => {
               {sourceControl.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -140,6 +144,7 @@ const resources = () => {
               {cheatSheets.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -158,6 +163,7 @@ const resources = () => {
               {colourPickers.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -176,6 +182,7 @@ const resources = () => {
               {articles.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -194,6 +201,7 @@ const resources = () => {
               {servers.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -212,6 +220,7 @@ const resources = () => {
               {communication.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -230,6 +239,7 @@ const resources = () => {
               {designSoftware.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -248,6 +258,7 @@ const resources = () => {
               {projectManagement.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all"
                 >
@@ -266,6 +277,7 @@ const resources = () => {
               {books.map((item, index) => (
                 <a
                   href={item.url}
+                  key={index}
                   target="_blank"
                   className="border-2 border-gray-700 rounded-lg p-6 hover:border-yellow-300 transition-all flex gap-6"
                 >
